@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- form -->
+      <form>
+        <div class="container">
+          <!-- title -->
+          <h1>Kalkulator BMI</h1>
+
+          <!-- Jenis kelamin  -->
+          <select id="input-jk" name="jeniskelamin" class="box">
+            <option value="" selected disabled>Jenis kelamin</option>
+            <option value="lakilaki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+
+          <!-- Usia -->
+          <input
+            type="number"
+            class="box"
+            id="input-usia"
+            placeholder="Masukan usia"
+          />
+
+          <!-- Berat Badan  -->
+          <input
+            type="number"
+            class="box"
+            id="input-bb"
+            placeholder="Masukan berat badan (kg)"
+          />
+
+          <!-- Tinggi Badan  -->
+          <input
+            type="number"
+            class="box"
+            id="input-tb"
+            placeholder="Masukan tinggi badan (cm)"
+          />
+
+          <!-- Button  -->
+          <button type="button" onclick="calculation()">Hitung BMI</button>
+          <button>Reset</button>
+
+          <!-- Result  -->
+          <div id="resultbox" class="result">
+            <p class="result-txt" id="result"></p>
+            <p class="result-txt" id="result2" style="font-size: 40px"></p>
+            <p class="result-txt" id="result3"></p>
+
+            <button id="konsul-button" style="display: none;">Konsultasi Ahli Gizi</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
